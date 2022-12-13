@@ -1,0 +1,13 @@
+name : 'Thank You Action'
+description: 'Say "thank you" to new PR'
+author: 'yash'
+
+inputs:
+  GITHUB_TOKEN:
+    required : true
+  TENOR_TOKEN:
+    required : true
+
+runs:
+  using: 'node12'
+  main:'dist/index.js'
